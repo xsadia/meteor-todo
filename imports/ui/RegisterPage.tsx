@@ -21,7 +21,6 @@ export const RegisterPage = () => {
   const userId = useTracker(() => Meteor.userId());
 
   if (userId) {
-    console.log("register");
     return <Navigate to="/" />;
   }
 
