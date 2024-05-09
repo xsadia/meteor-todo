@@ -34,9 +34,11 @@ export const Layout: FC<LayoutProps> = ({ children }) => {
           </Title>
         </Flex>
 
-        <Button color="red" mr={16} onClick={handleLogout}>
-          Logout
-        </Button>
+        {userId ? (
+          <Button color="red" mr={16} onClick={handleLogout}>
+            Logout
+          </Button>
+        ) : null}
       </Flex>
 
       <Center mt={150} mb={20}>
