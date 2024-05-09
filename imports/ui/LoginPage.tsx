@@ -20,7 +20,6 @@ export const LoginPage = () => {
   const userId = useTracker(() => Meteor.userId());
 
   if (userId) {
-    console.log(userId);
     return <Navigate to="/" />;
   }
 
